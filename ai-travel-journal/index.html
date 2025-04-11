@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Travel Journal Generator</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <h1>AI Travel Journal Generator</h1>
+
+  <input id="destination" type="text" placeholder="Enter Destination (e.g., Paris)" />
+  <input id="days" type="number" placeholder="Number of Days (e.g., 5)" />
+  <textarea id="activities" rows="4" placeholder="Enter Activities (e.g., Eiffel Tower, Louvre, cafes)"></textarea>
+  <button onclick="generateJournal()" id="generateBtn">Generate Journal</button>
+
+  <div id="result" class="card" style="display: none;">
+    <h2>Your Travel Journal</h2>
+    <p id="journalText"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
